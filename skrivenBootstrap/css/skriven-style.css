@@ -1,0 +1,228 @@
+/* Skriven CSS Stylesheet */
+
+body{
+	font-family: 'IM Fell English', serif;
+}
+
+.firesinger {
+
+}
+
+.sk-bkgd-dark {
+	background-color: #1c1c1c
+}
+
+.sk-bkgd-light {
+	background-color: white
+}
+
+.sk-img-stack {
+	position: absolute;
+	top:0;
+	display: block
+}
+
+#maincontain {
+	background-color: #1c1c1c;
+	position: relative;
+	z-index: 98;
+}
+
+	.pax #maincontain {
+		top: 140px;
+	}
+
+
+#main {
+	max-width: 900px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 99;
+	position: relative;
+	background-color: #1c1c1c;
+}
+
+.section {
+
+}
+
+
+
+
+/* PARALLAX */
+
+.keyart, .keyart_layer {
+	height: 1000px;
+}
+
+
+#parallax {
+	display: none;
+}
+#nonparallax {
+	display: block;
+}
+
+#nonparallax {
+	background-image: url('../assets/header.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+ 
+.keyart {
+	position: relative;
+	z-index: 10;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+
+.keyart_layer.parallax {
+	position: fixed;
+}
+	#keyart-0 {
+		background-image: url('../assets/Layer0.png');
+		background-color: #1c1c1c;
+	}
+	#keyart-1 {
+		background-image: url('../assets/Layer1.png');
+	}
+	#keyart-2 {
+		background-image: url('../assets/Layer2.png');
+	}
+	#keyart-3 {
+		background-image: url('../assets/Layer3.png');
+	}
+	#keyart-4 {
+		background-image: url('../assets/Layer4.png');
+	}
+	#keyart-5 {
+		background-image: url('../assets/Layer5.png');
+	}
+	#keyart-6 {
+		background-image: url('../assets/Layer6.png');
+	}
+	#keyart-7 {
+		background-image: url('../assets/Layer7.png');
+	}
+	#keyart-8 {
+		background-image: url('../assets/Layer8.png');
+	}
+	#keyart-9 {
+		background-image: url('../assets/Layer9.png');
+	}
+	#keyart-scrim {
+		background-color: #1c1c1c;
+		opacity: 0;
+	}
+
+/*
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
+	#keyart-0 {
+		background-image: url('../assets/Layer0.png');
+		background-color: #ffaf1b;
+	}
+	#keyart-1 {
+		background-image: url('../assets/Layer1.png');
+	}
+	#keyart-2 {
+		background-image: url('../assets/Layer2.png');
+	}
+	#keyart-3 {
+		background-image: url('../assets/Layer3.png');
+	}
+	#keyart-4 {
+		background-image: url('../assets/Layer4.png');
+	}
+	#keyart-5 {
+		background-image: url('../assets/Layer5.png');
+	}
+	#keyart-6 {
+		background-image: url('../assets/Layer6.png');
+	}
+	#keyart-7 {
+		background-image: url('../assets/Layer7.png');
+	}
+	#keyart-8 {
+		background-image: url('../assets/Layer8.png');
+	}
+	#keyart-9 {
+		background-image: url('../assets/Layer9.png');
+	}
+	#keyart-scrim {
+		background-color: #ffaf00;
+		opacity: 0;
+	}
+}
+*/
+
+/********************/
+/********************/
+/* ENABLES PARALLAX */
+/********************/
+/********************/
+
+@media (min-width: 601px) {
+
+	#nonparallax {
+		display: none;
+	}
+	#parallax {
+		display: block;
+	}
+
+}
+
+/*********************/
+/*********************/
+/* DISABLES PARALLAX */
+/*********************/
+/*********************/
+
+@media (max-width: 600px) {
+
+	#nonparallax {
+		display: block;
+	}
+	#parallax {
+		display: none;
+	}
+
+	#main {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 70px;
+	}
+
+	.section.copyright p {
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 1px;
+	}
+	.section.companylinks .companies li h1 {
+		margin: 20px;
+	}
+}
+
+/*
+/* PARALLAX 
+
+	.keyart, .keyart_layer {
+		height: 550px;
+	}
+
+	.keyart_layer {
+		position: absolute;
+		background-size: auto 600px;
+	}
+}
+*/
+
