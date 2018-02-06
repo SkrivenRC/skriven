@@ -74,7 +74,7 @@ Vagrant.configure(2) do |config|
     sudo apt-get update;
     sudo apt-get install -y aptitude apache2 vim;
     sudo rm /etc/apache2/sites-enabled/000-default.conf;
-    sudo ln -s /etc/apache2/sites-enabled/skriven.conf /vagrant/vagrant/skriven.conf;
+    sudo ln -s /vagrant/vagrant/skriven.conf /etc/apache2/sites-enabled/skriven.conf;
     sudo apachectl -k restart;
   SHELL
 
